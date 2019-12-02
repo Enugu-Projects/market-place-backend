@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Enugu-Projects/market-place-backend/issues"
   },
-  "homepage": "https://github.com/Enugu-Projects/market-place-backend#readme"
+  "homepage": "https://github.com/Enugu-Projects/market-place-backend#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
