@@ -5,12 +5,8 @@ const logger = require('middleware/logger')
 //Initializing application
 app = express()
 
-
-
 /*-----------------------------------------------------------------------
-
 Middlewares
-
 --------------------------------------------------------------------------
 */
 //Logger middleware
@@ -20,6 +16,6 @@ app.use(logger)
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
-
+// Local deployment port for testing the app
 const PORT = process.env.PORT || 5000
 app.listen(PORT, ()=>console.log(`Server started on port ${PORT}`))
