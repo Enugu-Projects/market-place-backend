@@ -18,6 +18,17 @@ The backend for Enugu Market place.
 * Run <code>npm install</code> to ensure that depencies are up to date
 * Wait a few seconds or minutes to see project open in your default browser on <code>port 5000</code>
 
+
+## Installing Dependencies
+* Run <code>npm install express</code>
+
+### in the local machine
+* You would need to install nodemon as a dev dependency using the command <code>npm i -D nodemon</code>
+
+## Starting the server
+### on your local machine
+* Input the command <code>npm run dev</code> This will start an active server on your local machine
+
 ### on the internet
 * Click [here](# "here") to open the page
 
