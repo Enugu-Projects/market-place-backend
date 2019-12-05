@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-const logger = require('middleware/logger')
+const logger = require('./middleware/logger')
 
 //Initializing application
 app = express()
@@ -15,6 +15,10 @@ app.use(logger)
 //Body Parser Middleware
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
+
+app.get('/', (req, res) => {
+    res.json({ response: 'The server is working well' })
+  })
 
 // Local deployment port for testing the app
 const PORT = process.env.PORT || 5000
