@@ -16,6 +16,7 @@ app.use(logger)
 app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 
+//Routes
 app.get('/', (req, res) => {
     res.json({ response: 'The server is working well' })
   })
